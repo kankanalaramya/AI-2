@@ -29,19 +29,19 @@ Describe the Q table, epsilon-greedy selection, update:
 State the two tested configurations:
 - A: alpha=0.15, gamma=0.95, epsilon decay=0.995.
 - B: alpha=0.30, gamma=0.90, epsilon decay=0.990.
-State the seeds actually used (11, 22, 33), episode count (2500), and evaluation procedure (epsilon disabled; greedy actions). Insert reward and success-rate plots. Discuss approximate convergence and variability across seeds.
+State the seeds actually used (11, 22, 33), the separate fixed layout seed (42), episode count (2500), and evaluation procedure (epsilon disabled; greedy actions). Insert reward and success-rate plots. Use the saved per-episode CSVs and one greedy-path CSV as evidence. Discuss approximate convergence and variability across seeds.
 
 ## 5. Part 3 - Stochastic Motion
 Compare p=1.00, 0.90, 0.80. Insert the policy images and experiment summaries. Compare average evaluation reward, success rate, and policy behaviour. Identify a state where the selected action differs across p values by inspecting the generated policies; explain the route/congestion trade-off using the actual grid.
 
 ## 6. Value Iteration vs Q-Learning
-[Compare the methods using the matched-layout, matched-p CSV results: the experiment CSV now includes Value Iteration's 100-episode stochastic evaluation reward and success rate alongside Q-Learning's. Compare these values and the policy visualizations. Explain why Q-Learning may differ due to finite training, exploration, random seeds, and sampling.]
+[Compare the methods using the matched-layout, matched-p, matched-gamma CSV results. The experiment CSV includes both methods' 100-episode evaluation reward and success rate using the same evaluation seed. Configuration B's VI baseline uses gamma 0.90; the standalone Part 1 VI script uses 0.95. Compare results and policy visualizations. Explain differences due to finite training, exploration, random seeds, and sampling.]
 
 ## 7. Environment Changes
 [Document the minimal change: optional `intended_probability` parameter in `step`; action outcomes sampled with p and the two perpendicular probabilities. Confirm the original grid, station placement, reward definitions, and Pygame display were retained.]
 
 ## 8. Limitations
-The four-element state omits remaining steps; the environment's max-step cutoff is treated as an episode truncation by the learning algorithms. A strict finite-horizon Markov model would include remaining steps in the state.
+The four-element state omits remaining steps. VI models the discounted task until successful return. Q-Learning retains its estimate of future value at a timeout, while ending that training episode. Evaluation still counts a timeout as failure. A strict finite-horizon Markov model would include remaining steps in the state.
 
 ## 9. Group Contributions
 [Enter each member's actual contribution. If not applicable, state that.]

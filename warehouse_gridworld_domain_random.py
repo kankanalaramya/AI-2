@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+# BEGIN AI ACKNOWLEDGMENT
+# AI-assisted project preparation: OpenAI ChatGPT / Codex.
+# Scope and disclosure: report/REPORT.md, Section 10.
+# Detailed assistance record: report/AI_ASSISTANCE.md (Appendix C).
+# Project repository: https://github.com/kankanalaramya/AI-2
+# Conversation links omitted for privacy; see the disclosure in Section 10.
+# END AI ACKNOWLEDGMENT
 """
 COSC-4117EL: Assignment 2 Problem Domain
 Warehouse Robot Navigation with Reinforcement Learning
@@ -20,6 +27,8 @@ Suggested state representation for RL:
     (row, col, has_package, delivered)
 
 The environment is intentionally lightweight so you can focus on RL.
+
+Note: The initial code template was generated with the assistance of ChatGPT.
 
 Assignment extension: step(action, intended_probability) supports stochastic motion. The original grid, station placement, reward rules, and rendering are retained. AI assistance used in preparing this extension must be acknowledged in the submitted work.
 """

@@ -1,12 +1,20 @@
+# BEGIN AI ACKNOWLEDGMENT
+# AI-assisted project preparation: OpenAI ChatGPT / Codex.
+# Scope and disclosure: report/REPORT.md, Section 10.
+# Detailed assistance record: report/AI_ASSISTANCE.md (Appendix C).
+# Project repository: https://github.com/kankanalaramya/AI-2
+# Conversation links omitted for privacy; see the disclosure in Section 10.
+# END AI ACKNOWLEDGMENT
 """
 Value Iteration for COSC-4117EL Assignment 2.
 Uses the supplied WarehouseGridWorld domain and its reward rules.
 
-AI assistance acknowledgment: this starter implementation was prepared with ChatGPT assistance. Add the actual conversation/share link in your submitted code/report as required by the assignment.
+AI assistance acknowledgment: see the source comments above, report Section 10, and Appendix C for scope and disclosure.
 """
 import os
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap
 
 from warehouse_gridworld_domain_random import (
     WarehouseGridWorld, ACTIONS, ACTION_TO_DELTA,
@@ -149,7 +157,8 @@ def value_iteration(world, intended_probability=0.80, gamma=GAMMA, theta=THETA):
 def draw_policy(world, policy, filename, title, phase=(1, 0)):
     """Draw one task-progress phase: (has_package, delivered)."""
     fig, ax = plt.subplots(figsize=(8, 8))
-    ax.imshow(world.grid, cmap="Pastel1", vmin=0, vmax=5)
+    colors = ListedColormap(["#f4f6f8", "#303844", "#f2b1a8", "#89b5ef", "#f2d270", "#91d4b1"])
+    ax.imshow(world.grid, cmap=colors, vmin=0, vmax=5)
     has_package, delivered = phase
     for r in range(world.size):
         for c in range(world.size):
@@ -166,7 +175,8 @@ def draw_policy(world, policy, filename, title, phase=(1, 0)):
                 label = "C"
             else:
                 label = ""
-            ax.text(c, r, label, ha="center", va="center", fontsize=10, fontweight="bold")
+            color = "white" if cell == SHELF else "black"
+            ax.text(c, r - 0.1, label, ha="center", va="center", fontsize=10, fontweight="bold", color=color)
             action = policy.get((r, c, has_package, delivered))
             if action:
                 ax.text(c, r + 0.28, ARROWS[action], ha="center", va="center", fontsize=10, color="navy")
@@ -174,7 +184,12 @@ def draw_policy(world, policy, filename, title, phase=(1, 0)):
     ax.set_title(title + f"\n{phase_name} policy")
     ax.set_xticks(range(world.size))
     ax.set_yticks(range(world.size))
-    ax.grid(True, linewidth=0.5)
+    ax.set_xlabel("Column | P: pickup, D: packing, C: dock, !: congestion, #: shelf")
+    ax.set_ylabel("Row")
+    ax.set_xticks(np.arange(-0.5, world.size, 1), minor=True)
+    ax.set_yticks(np.arange(-0.5, world.size, 1), minor=True)
+    ax.grid(which="minor", linewidth=0.5, color="gray")
+    ax.tick_params(which="minor", bottom=False, left=False)
     fig.tight_layout()
     fig.savefig(filename, dpi=160)
     plt.close(fig)

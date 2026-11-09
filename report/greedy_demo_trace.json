@@ -1,0 +1,695 @@
+[
+  {
+    "step": 1,
+    "before": [
+      6,
+      0,
+      0,
+      0
+    ],
+    "action": "up",
+    "actual_action": "up",
+    "state": [
+      5,
+      0,
+      0,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -1.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 2,
+    "before": [
+      5,
+      0,
+      0,
+      0
+    ],
+    "action": "up",
+    "actual_action": "up",
+    "state": [
+      4,
+      0,
+      0,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -2.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 3,
+    "before": [
+      4,
+      0,
+      0,
+      0
+    ],
+    "action": "right",
+    "actual_action": "right",
+    "state": [
+      4,
+      1,
+      0,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -3.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 4,
+    "before": [
+      4,
+      1,
+      0,
+      0
+    ],
+    "action": "right",
+    "actual_action": "down",
+    "state": [
+      5,
+      1,
+      0,
+      0
+    ],
+    "reward": -11.0,
+    "total_reward": -14.0,
+    "event": "move",
+    "congestion": true
+  },
+  {
+    "step": 5,
+    "before": [
+      5,
+      1,
+      0,
+      0
+    ],
+    "action": "up",
+    "actual_action": "up",
+    "state": [
+      4,
+      1,
+      0,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -15.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 6,
+    "before": [
+      4,
+      1,
+      0,
+      0
+    ],
+    "action": "right",
+    "actual_action": "right",
+    "state": [
+      4,
+      2,
+      0,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -16.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 7,
+    "before": [
+      4,
+      2,
+      0,
+      0
+    ],
+    "action": "right",
+    "actual_action": "right",
+    "state": [
+      4,
+      3,
+      0,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -17.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 8,
+    "before": [
+      4,
+      3,
+      0,
+      0
+    ],
+    "action": "up",
+    "actual_action": "up",
+    "state": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -18.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 9,
+    "before": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "action": "up",
+    "actual_action": "right",
+    "state": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "reward": -4.0,
+    "total_reward": -22.0,
+    "event": "invalid_move",
+    "congestion": false
+  },
+  {
+    "step": 10,
+    "before": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "action": "up",
+    "actual_action": "left",
+    "state": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "reward": -4.0,
+    "total_reward": -26.0,
+    "event": "invalid_move",
+    "congestion": false
+  },
+  {
+    "step": 11,
+    "before": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "action": "up",
+    "actual_action": "up",
+    "state": [
+      2,
+      3,
+      0,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -27.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 12,
+    "before": [
+      2,
+      3,
+      0,
+      0
+    ],
+    "action": "left",
+    "actual_action": "up",
+    "state": [
+      1,
+      3,
+      0,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -28.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 13,
+    "before": [
+      1,
+      3,
+      0,
+      0
+    ],
+    "action": "down",
+    "actual_action": "left",
+    "state": [
+      1,
+      3,
+      0,
+      0
+    ],
+    "reward": -4.0,
+    "total_reward": -32.0,
+    "event": "invalid_move",
+    "congestion": false
+  },
+  {
+    "step": 14,
+    "before": [
+      1,
+      3,
+      0,
+      0
+    ],
+    "action": "down",
+    "actual_action": "left",
+    "state": [
+      1,
+      3,
+      0,
+      0
+    ],
+    "reward": -4.0,
+    "total_reward": -36.0,
+    "event": "invalid_move",
+    "congestion": false
+  },
+  {
+    "step": 15,
+    "before": [
+      1,
+      3,
+      0,
+      0
+    ],
+    "action": "down",
+    "actual_action": "down",
+    "state": [
+      2,
+      3,
+      0,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -37.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 16,
+    "before": [
+      2,
+      3,
+      0,
+      0
+    ],
+    "action": "left",
+    "actual_action": "left",
+    "state": [
+      2,
+      2,
+      1,
+      0
+    ],
+    "reward": 24.0,
+    "total_reward": -13.0,
+    "event": "pickup",
+    "congestion": false
+  },
+  {
+    "step": 17,
+    "before": [
+      2,
+      2,
+      1,
+      0
+    ],
+    "action": "right",
+    "actual_action": "right",
+    "state": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -14.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 18,
+    "before": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "action": "up",
+    "actual_action": "up",
+    "state": [
+      1,
+      3,
+      1,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -15.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 19,
+    "before": [
+      1,
+      3,
+      1,
+      0
+    ],
+    "action": "up",
+    "actual_action": "up",
+    "state": [
+      0,
+      3,
+      1,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -16.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 20,
+    "before": [
+      0,
+      3,
+      1,
+      0
+    ],
+    "action": "right",
+    "actual_action": "down",
+    "state": [
+      1,
+      3,
+      1,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -17.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 21,
+    "before": [
+      1,
+      3,
+      1,
+      0
+    ],
+    "action": "up",
+    "actual_action": "up",
+    "state": [
+      0,
+      3,
+      1,
+      0
+    ],
+    "reward": -1.0,
+    "total_reward": -18.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 22,
+    "before": [
+      0,
+      3,
+      1,
+      0
+    ],
+    "action": "right",
+    "actual_action": "right",
+    "state": [
+      0,
+      4,
+      1,
+      1
+    ],
+    "reward": 39.0,
+    "total_reward": 21.0,
+    "event": "delivery",
+    "congestion": false
+  },
+  {
+    "step": 23,
+    "before": [
+      0,
+      4,
+      1,
+      1
+    ],
+    "action": "left",
+    "actual_action": "up",
+    "state": [
+      0,
+      4,
+      1,
+      1
+    ],
+    "reward": -4.0,
+    "total_reward": 17.0,
+    "event": "invalid_move",
+    "congestion": false
+  },
+  {
+    "step": 24,
+    "before": [
+      0,
+      4,
+      1,
+      1
+    ],
+    "action": "left",
+    "actual_action": "left",
+    "state": [
+      0,
+      3,
+      1,
+      1
+    ],
+    "reward": -1.0,
+    "total_reward": 16.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 25,
+    "before": [
+      0,
+      3,
+      1,
+      1
+    ],
+    "action": "down",
+    "actual_action": "down",
+    "state": [
+      1,
+      3,
+      1,
+      1
+    ],
+    "reward": -1.0,
+    "total_reward": 15.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 26,
+    "before": [
+      1,
+      3,
+      1,
+      1
+    ],
+    "action": "down",
+    "actual_action": "down",
+    "state": [
+      2,
+      3,
+      1,
+      1
+    ],
+    "reward": -1.0,
+    "total_reward": 14.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 27,
+    "before": [
+      2,
+      3,
+      1,
+      1
+    ],
+    "action": "down",
+    "actual_action": "down",
+    "state": [
+      3,
+      3,
+      1,
+      1
+    ],
+    "reward": -1.0,
+    "total_reward": 13.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 28,
+    "before": [
+      3,
+      3,
+      1,
+      1
+    ],
+    "action": "down",
+    "actual_action": "down",
+    "state": [
+      4,
+      3,
+      1,
+      1
+    ],
+    "reward": -1.0,
+    "total_reward": 12.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 29,
+    "before": [
+      4,
+      3,
+      1,
+      1
+    ],
+    "action": "left",
+    "actual_action": "left",
+    "state": [
+      4,
+      2,
+      1,
+      1
+    ],
+    "reward": -1.0,
+    "total_reward": 11.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 30,
+    "before": [
+      4,
+      2,
+      1,
+      1
+    ],
+    "action": "left",
+    "actual_action": "left",
+    "state": [
+      4,
+      1,
+      1,
+      1
+    ],
+    "reward": -1.0,
+    "total_reward": 10.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 31,
+    "before": [
+      4,
+      1,
+      1,
+      1
+    ],
+    "action": "left",
+    "actual_action": "left",
+    "state": [
+      4,
+      0,
+      1,
+      1
+    ],
+    "reward": -1.0,
+    "total_reward": 9.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 32,
+    "before": [
+      4,
+      0,
+      1,
+      1
+    ],
+    "action": "down",
+    "actual_action": "down",
+    "state": [
+      5,
+      0,
+      1,
+      1
+    ],
+    "reward": -1.0,
+    "total_reward": 8.0,
+    "event": "move",
+    "congestion": false
+  },
+  {
+    "step": 33,
+    "before": [
+      5,
+      0,
+      1,
+      1
+    ],
+    "action": "down",
+    "actual_action": "down",
+    "state": [
+      6,
+      0,
+      1,
+      1
+    ],
+    "reward": 99.0,
+    "total_reward": 107.0,
+    "event": "return_to_dock",
+    "congestion": false
+  }
+]

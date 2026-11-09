@@ -1,0 +1,14 @@
+{
+  "group": "19",
+  "members": [
+    {"name": "Ramya Kankanala", "student_id": "0477092"},
+    {"name": "Sugandi Upeksha Yapa", "student_id": "0477736"}
+  ],
+  "ai_tools": "OpenAI ChatGPT / Codex",
+  "ai_use": "AI assistance was used to review the assignment requirements and existing implementation, explain seeded randomness and the algorithms, revise the algorithms and GUI, prepare and run verification checks, analyze saved experiments, and draft and format this report. The group must review and understand the submitted code and report. The instructor-provided environment also retains its original ChatGPT template acknowledgment.",
+  "repository_url": "https://github.com/kankanalaramya/AI-2",
+  "ai_conversation_links": [],
+  "ai_link_omission_note": "Conversation links are omitted for privacy reasons to avoid publicly disclosing personal identifiers and local project information contained in the development chat. Appendix C documents the scope of AI assistance, which is also acknowledged in source comments. The group requests consideration of this disclosure as an alternative to sharing the conversation. Instructor acceptance of this alternative has not been confirmed.",
+  "grade_adjustment_statement": "",
+  "d2l_programming_standards_checked": true
+}
